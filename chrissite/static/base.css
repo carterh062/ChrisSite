@@ -17,6 +17,18 @@ body{
   	overflow: hidden;
 
 }
+#logo-div-ind{
+	width:100px;
+	height:100px;
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	margin-top: 20px;
+}
+#logo-div-ind > img{
+	max-width: 100%;
+	max-height:100%;
+}
 a{
 	color: #00688B;
 	text-decoration : none;
@@ -36,6 +48,7 @@ p{
 	text-align: center;
 	height: 60px;
 	width: 100%;
+	display: inline-block;
 	background-color: black;
 	border-radius: 10px;
 }
