@@ -16,7 +16,7 @@ DATABASES = {
         'NAME': 'chrissite',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'carter',
-        'PASSWORD': 'chocolat062',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
@@ -111,7 +111,7 @@ WSGI_APPLICATION = 'chrissite.wsgi.application'
 
 TEMPLATE_DIRS = (
     '/templates/',
-    'chrissite/chrissite/templates/'
+    'chrissite/templates/'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
