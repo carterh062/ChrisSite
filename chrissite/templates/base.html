@@ -1,0 +1,145 @@
+<html>
+
+<head>
+	<title>Christian Eason | Musician</title>
+	<link rel="stylesheet" href="{{ STATIC_URL }}jquery-ui/themes/base/jquery.ui.all.css">
+	<link href="{{ STATIC_URL }}jplayer/css/jPlayer.css" rel="stylesheet" type="text/css"/>
+	<link href="{{ STATIC_URL }}jplayer/css/prettify-jPlayer.css" rel="stylesheet" type="text/css"/>
+	<link href="{{ STATIC_URL }}jplayer/css/jplayer.pink.flag.css" rel="stylesheet" type="text/css"/>
+
+	<script src="{{ STATIC_URL }}jquery-ui/jquery.js"></script>
+	<script src="{{ STATIC_URL }}home-liquid-slide.js" type="text/javascript"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-blind.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-bounce.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-clip.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-drop.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-explode.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-fade.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-fold.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-highlight.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-pulsate.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-scale.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-shake.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-slide.js"></script>
+	<script src="{{ STATIC_URL }}jquery-ui/ui/jquery.ui.effect-transfer.js"></script>
+	<script src="{{ STATIC_URL }}galleria/galleria-1.3.3.js"></script>
+	<script src="{{ STATIC_URL }}jplayer/jquery.jplayer.js"></script>
+	<script src="{{ STATIC_URL }}jplayer/add-on/jplayer.playlist.js"></script>
+	<script src="{{ STATIC_URL }}jplayer/add-on/jquery.jplayer.inspector.js"></script>
+	<link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}galleria/themes/classic/galleria.classic.css">
+	<script type="text/javascript" src="{{ STATIC_URL }}galleria/themes/classic/galleria.classic.min.js"></script>
+	<link href="{{ STATIC_URL }}base.css" media="screen" rel="stylesheet">
+	{% block include %}{% endblock %}
+</head>
+
+<body>
+	<div id ="header-all-pages">
+		<a href="/"><p>CHRISTIAN EASON</p></a>
+		<div id="social-bar">
+			<a href="http://www.facebook.com"><img src="{{ STATIC_URL }}img/social/facebook.png"></img></a>
+			<a href="http://www.twitter.com"><img src="{{ STATIC_URL }}img/social/twitter.png"></img></a>
+			<a href="http://www.youtube.com"><img src="{{ STATIC_URL }}img/social/youtube.png"></img></a>
+		</div>
+		</br>
+		<div class="white-bold" id="menu-bar">
+			<a id="home-link">HOME</a><span class="slash-color"> | </span>
+			<a id="music-link">MUSIC</a><span class="slash-color"> | </span>
+			<a id="photos-link">PHOTOS</a><span class="slash-color"> | </span>
+			<a id="performances-link">PERFORMANCES</a><span class="slash-color"> | </span>
+			<a id="about-link">ABOUT</a><span class="slash-color"> | </span>
+			<a id="contact-link">CONTACT</a>
+		</div>
+	</div>
+	<div id="secondary-header">
+		<div class="header-divs">
+			<p>FEATURED VIDEOS</p>
+		</div>
+		<div class="header-divs">
+			<p>LATEST NEWS</p>
+		</div>
+		<div class="header-divs">
+			<p>TEAM CHRISSY</p>
+		</div>
+		<div class="header-divs">
+			<p>LATEST ALBUM</p>
+		</div>
+	</div>
+	{% block content %}{% endblock %}
+	<div id="secondary-footer">
+	</div>
+	<div id="footer-all-pages">
+	
+	</div>
+</body>
+<script>
+Galleria.loadTheme('{{ STATIC_URL }}galleria/themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria', {
+  		height: parseInt($('#galleria').css('height')),
+  		wait: true
+ 	});
+ </script>
+ <script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"A Light In The Dark",
+			mp3:"{{ STATIC_URL }}mp4/chris-music/1.mp3"
+		},
+		{
+			title:"Summertime",
+			mp3:"{{ STATIC_URL }}mp4/chris-music/2.mp3"
+		},
+		{
+			title:"Im Wunderschonen Monat Mai",
+			mp3:"{{ STATIC_URL }}mp4/chris-music/3.mp3"
+		},
+		{
+			title:"O Sole Mio",
+			mp3:"{{ STATIC_URL }}mp4/chris-music/4.mp3"
+		},
+		{
+			title:"Come Up To My Office",
+			mp3:"{{ STATIC_URL }}mp4/chris-music/5.mp3"
+		},
+		{
+			title:"Danza Danza",
+			free:true,
+			mp3:"{{ STATIC_URL }}mp4/chris-music/6.mp3"
+		},
+		{
+			title:"O Del Mio Amato Ben",
+			mp3:"{{ STATIC_URL }}mp4/chris-music/7.mp3"
+		},
+		{
+			title:"You Don't Know This Man",
+			mp3:"{{ STATIC_URL }}mp4/chris-music/8.mp3"
+		},
+		{
+			title:"A-Rumblin' And A-Rollin'",
+			mp3:"{{ STATIC_URL }}mp4/chris-music/9.mp3"
+		},
+		{
+			title:"His Eye Is On The Sparrow",
+			free:true,
+			mp3:"{{ STATIC_URL }}mp4/chris-music/10.mp3"
+		}
+	], {
+		swfPath: "../js",
+		supplied: "mp3",
+		wmode: "window",
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+
+	$("#jplayer_inspector_1").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
+});
+//]]>
+</script>
+
+</html>

@@ -1,0 +1,75 @@
+#home-slide{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+}
+#img-container{
+  width:100%;
+  height:100%;
+}
+#img-container > img{
+  max-width:100%;
+  max-height: 90%;
+}
+.galleria{
+  width:50%;
+  height:70%;
+  margin:0 auto;
+}
+#music-slide{
+  margin: 0 auto;
+  margin-top: -30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: none;
+  position: absolute;
+}
+#photos-slide{
+  margin: 0 auto;
+  margin-top: -30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: none;
+  position: absolute;
+}
+#performances-slide{
+  margin: 0 auto;
+  margin-top: -30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: none;
+  position: absolute;
+  background-color: yellow;
+}
+#about-slide{
+  margin: 0 auto;
+  margin-top: -30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: none;
+  position: absolute;
+  background-color: purple;
+}
+#contact-slide{
+  margin: 0 auto;
+  margin-top: -30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: none;
+  position: absolute;
+  background-color: orange;
+}
+.center-p{
+  text-align: center;
+}
+body{
+  position: relative;
+}
+

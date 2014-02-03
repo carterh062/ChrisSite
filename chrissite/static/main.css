@@ -1,0 +1,231 @@
+body {
+  background: url(img/chris-hs.jpg) no-repeat;
+  background-size: 100%;
+  font: normal 0.9em Arial;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px; }
+
+h2 {
+  display: inline; }
+
+.div1, .div2 {
+  width: 100%; }
+
+.div1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 2%; }
+  .div1 p {
+    display: inline; }
+
+.div2 a {
+  color: #0077cc; }
+
+.div1 a.current {
+  color: black;
+  text-decoration: none; }
+
+.div2 {
+  margin-top: 70px; }
+  .div2 li {
+    padding-top: 6px;
+    padding-bottom: 6px; }
+
+.green {
+  color: green; }
+
+.cn {
+  font-family: "Courier New", Georgia; }
+
+#status {
+  display: inline-block;
+  margin-left: 26px;
+  line-height: 50px;
+  height: 50px;
+  vertical-align: middle; }
+
+.code {
+  border: dashed 1px #bcbccb;
+  padding: 8px 12px;
+  background-color: #f3f3f9;
+  white-space: pre;
+  font-family: "Courier New", Georgia;
+  font-size: 12px;
+  margin: 6px 0;
+  overflow: auto; }
+
+#sliderFrame {
+  position: relative;
+  width: 10%;
+  margin-top: 12%;
+  margin-left: 2%;
+  /*center-aligned */ }
+
+#slider {
+  width: 600px;
+  height: 306px;
+  /* Must be the same size as the slider images */
+  border-radius: 12px;
+  background: white url(loading.gif) no-repeat 50% 50%;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0px 1px 5px #999999; }
+  #slider div.sliderInner {
+    width: 600px;
+    height: 306px;
+    /* Must be the same size as the slider images */
+    border-radius: 12px; }
+  #slider a.imgLink {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%; }
+  #slider .video {
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent url(video.png) no-repeat 50% 50%; }
+  #slider div.mc-caption-bg, #slider div.mc-caption-bg2 {
+    position: absolute;
+    width: 440px;
+    height: auto;
+    padding: 10px 0;
+    /* 10px will increase the height. */
+    left: 120px;
+    /*if the caption needs to be aligned from right, specify by right instead of left. i.e. right:20px; */
+    bottom: 10px;
+    /*if the caption needs to be aligned from top, specify by top instead of bottom. i.e. top:150px; */
+    z-index: 3;
+    overflow: hidden;
+    font-size: 0; }
+  #slider div.mc-caption-bg {
+    /* NOTE: Its opacity is to be set through the sliderOptions.captionOpacity setting in the js-image-slider.js file. */
+    background: black;
+    /* or any other colors such as White, or: background:none; */
+    border: 1px solid white;
+    border-radius: 5px; }
+  #slider div.mc-caption-bg2 {
+    background: none; }
+  #slider div.mc-caption {
+    font: bold 15px Arial;
+    color: #eeeeee;
+    z-index: 4;
+    text-align: center;
+    background: none; }
+    #slider div.mc-caption a {
+      color: #ffbb00; }
+      #slider div.mc-caption a:hover {
+        color: #ddaa00; }
+  #slider div.navBulletsWrapper {
+    top: 320px;
+    /* Its position is relative to the #slider */
+    text-align: center;
+    background: none;
+    position: relative;
+    z-index: 5; }
+    #slider div.navBulletsWrapper div {
+      width: 11px;
+      height: 11px;
+      border: 1px solid #aaaaaa;
+      background: #eeeeee;
+      color: #aaaaaa;
+      font: normal 9px Arial;
+      text-align: center;
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      overflow: hidden;
+      cursor: pointer;
+      margin: 0 6px;
+      /* set distance between each bullet */
+      border-radius: 50%;
+      box-shadow: inset 0 0 4px #aaaaaa; }
+      #slider div.navBulletsWrapper div.active {
+        border-color: #3e99c6;
+        background: #2f2f4f;
+        color: #70dbdb; }
+  #slider div.loading {
+    width: 100%;
+    height: 100%;
+    background: transparent url(loading.gif) no-repeat 50% 50%;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9; }
+  #slider img, #slider > b, #slider a > b {
+    position: absolute;
+    border: none;
+    display: none; }
+  #slider div.sliderInner {
+    overflow: hidden;
+    -webkit-transform: rotate(0deg);
+    /* fixed the Chrome not crop border-radius bug */
+    position: absolute;
+    top: 0;
+    left: 0; }
+  #slider > a, #slider video, #slider audio {
+    display: none; }
+
+.slate {
+  color: #2f2f4f;
+  font-family: Helvetica;
+  font-size: 50px; }
+
+.light-blue {
+  color: #70dbdb;
+  font-family: Helvetica;
+  font-size: 50px; }
+
+.green-tint {
+  color: #0066cc;
+  font-family: Helvetica;
+  font-size: 30px; }
+
+.twitter-timeline {
+  float: right;
+  margin-top: 7.75%;
+  margin-right: 2%;
+  height: 306px; }
+
+#mainSiteButton {
+  width: 200px;
+  height: 50px;
+  margin-left: 2%;
+  border-radius: 12px;
+  background-color: #2f2f4f;
+  position: absolute; }
+  #mainSiteButton p {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    font-family: Helvetica;
+    color: #70dbdb;
+    text-decoration: none; }
+  #mainSiteButton:hover {
+    background-color: #434360; }
+
+#audioPlayer {
+  margin-top: 200px;
+  margin-left: 2%;
+  display: block; }
+
+/* the link style (if an image is wrapped in a link) */
+/* Caption styles */
+/* ------ built-in navigation bullets wrapper ------ */
+/* Note: check themes\2\js-image-slider.css to see how to hide nav bullets */
+/* each bullet */
+/* --------- Others ------- */

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block include %}
+	<link href="{{ STATIC_URL }}landing.css" media="screen" rel="stylesheet">
+	<script src="{{ STATIC_URL }}jquery.min.js"></script>
+  	
+
+  	<!-- SlidesJS Required: Link to jquery.slides.js -->
+  	<script src="{{ STATIC_URL }}jquery.slides.min.js"></script>
+  	<script src="{{ STATIC_URL }}base-slide.js"></script>
+{% endblock %}
+{% block content %}
+	<div class="slide-container">
+		<div id="fader">
+	      	<div id="slide-3"><img src="{{ STATIC_URL }}img/chris-3.jpg" alt="" class="slide-img"></div>
+	      	<div id="slide-4"><img src="{{ STATIC_URL }}img/chris-4.jpg" alt="" class="slide-img"></div>
+	      	<div id="slide-5"><img src="{{ STATIC_URL }}img/chris-5.jpg" alt="" class="slide-img"></div>
+	      	<div id="slide-7"><img src="{{ STATIC_URL }}img/chris-7.jpg" alt="" class="slide-img"></div>
+	      	<div id="slide-8"><img src="{{ STATIC_URL }}img/chris-8.jpg" alt="" class="slide-img"></div>
+	      	<div id="slide-11"><img src="{{ STATIC_URL }}img/chris-11.jpg" alt="" class="slide-img"></div>
+	      	<!-- <img src="{{ STATIC_URL }}img/chris-4.jpg" alt=""> -->
+	      	<a class="slidesjs-previous slidesjs-navigation"></a>
+		<a class="slidesjs-next slidesjs-navigation"></a>
+		</div>
+	</div>
+{% endblock %}

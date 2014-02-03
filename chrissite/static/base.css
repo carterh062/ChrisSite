@@ -1,0 +1,126 @@
+@font-face {
+font-family:"Spireql";
+src: url("spireql.ttf") /* TTF file for CSS3 browsers */
+}
+
+html{
+	overflow: hidden;
+}
+body{
+	margin:0px;
+  	background-size: 100%;
+  	background-color : rgba(0,0,0,1.0);
+  	font: normal 0.9em Arial;
+  	height:90%;
+  	padding: 0;
+  	padding-bottom: 60px;
+  	overflow: hidden;
+
+}
+a{
+	color: #00688B;
+	text-decoration : none;
+	font-weight: bold;
+	opacity: 1.0;
+}
+a:hover{
+	opacity: .4;
+	cursor:pointer;
+}
+p{
+	font-family: Verdana;
+}
+
+#header-all-pages{
+	float: center;
+	text-align: center;
+	height: 60px;
+	width: 100%;
+	background-color: black;
+	border-radius: 10px;
+}
+#header-all-pages > a:hover{
+	opacity: 1.0;
+}
+a > p{
+	font-size: 5.0em;
+	font-family: Spireql;
+	color: white;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+#social-bar{
+	margin-left: 5%;
+	margin-top: 40px;
+	position: absolute;
+	display: inline;
+}
+#social-bar > a{
+	width:50px;
+	height:50px;
+	margin-right: 15px;
+	cursor: default;
+}
+#social-bar > a:hover{
+	cursor: pointer;
+}
+#header-all-pages > a{
+
+}
+#secondary-header{
+	float: center;
+	text-align: center;
+	height: 50px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	background-color: black;
+	width:100%;
+	border-radius: 10px;
+}
+.header-divs{
+	width:175px;
+	display: inline-block;
+	display: none;
+	height: 100%;
+	margin-left: 1px;
+	margin-right:0px;
+	cursor: default;
+	border-radius: 10px;
+}
+.header-divs:hover{
+	background-color: rgba(255,255,255,0.3);
+	cursor: pointer;
+}
+.header-divs > p{
+	margin-top:15px;
+	font-size: 1.0em;
+	color: white;
+	font-weight:bold;
+}
+#menu-bar{
+	display: inline-block;
+}
+.white-bold{
+	color: white;
+	font-weight: bold;
+}
+.slash-color{
+	margin-left: 7px;
+	margin-right:7px;
+	color: white;
+	font-weight: none;
+}
+.media-copyright{
+	display: none;
+}
+#jplayer_inspector_1{
+	display: none;
+}
+#jp_container_1{
+	margin:0 auto;
+	margin-top: 5%;
+	width: 80%;
+	margin-bottom: 5%;
+}
