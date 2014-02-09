@@ -22,7 +22,7 @@ body{
 	height:100px;
 	position: relative;
 	float: right;
-	margin-right: 10%;
+	margin-right: 20%;
 	margin-top: 20px;
 }
 #logo-div-ind > img{
@@ -66,7 +66,8 @@ a > p{
 }
 #social-bar{
 	margin-left: 5%;
-	margin-top: 40px;
+	bottom: 0;
+	right: 0;
 	position: absolute;
 	display: inline;
 }
