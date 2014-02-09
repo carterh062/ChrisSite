@@ -1,3 +1,7 @@
+@font-face {
+font-family:"Spireql";
+src: url("spireql.ttf") /* TTF file for CSS3 browsers */
+}
 #home-slide{
   margin: 0 auto;
   width: 100%;
@@ -44,7 +48,70 @@
   border-radius: 50px;
   display: none;
   position: absolute;
-  background-color: yellow;
+}
+#performance-inner-slide{
+  margin: auto;
+  width:900px;
+  height:700px;
+  background-color: transparent;
+  margin-top: 50px;
+  overflow: auto;
+}
+.performance-content{
+  width:100%;
+  height:70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+.p-date{
+  display:inline-block;
+  float: left;
+  width:30%;
+  height:100%;
+  margin-left: 15px;
+}
+.p-date > h4{
+  color:white;
+  font-weight: normal;
+  font-size: 18px;
+}
+.p-title{
+  display:inline-block;
+  float: center;
+  width:30%;
+  height:100%;
+  margin-top: -10px;
+}
+.p-title > h4{
+  color:white;
+  font-size: 23px;
+  font-weight: normal;
+
+}
+.p-info{
+  display:inline-block;
+  float: right;
+  width:30%;
+  height:100%;
+  margin-top: 10px;
+  margin-right: 15px;
+  color: white;
+}
+.p-more{
+  display: inline-block;
+}
+#performance-inner-slide > h2{
+  text-align: center;
+  color: white;
+  font-family: Spireql;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#p-d{
+  float: left;
+  text-align: center;
+  margin-left: 10px;
 }
 #about-slide{
   margin: 0 auto;
@@ -54,7 +121,21 @@
   border-radius: 50px;
   display: none;
   position: absolute;
-  background-color: purple;
+}
+#about-inner-slide{
+  width: 900px;
+  height:700px;
+  margin: auto;
+  border:1px solid white;
+}
+#about-image-container > img{
+  width:500px;
+  height:700px;
+
+}
+#about-image-container{
+  width:50px;
+  height: 50px;
 }
 #contact-slide{
   margin: 0 auto;
@@ -72,4 +153,6 @@
 body{
   position: relative;
 }
-
+.light-blue{
+  color: #00688B;
+}
